@@ -1,0 +1,27 @@
+{
+  "name": "excelreadwritedemo",
+  "version": "1.0.0",
+  "description": "to read the content from excel file and make the changes to existing excel file",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudhirkFujitsu/ExcelReadWriteDemo.git"
+  },
+  "keywords": [
+    "nodejs",
+    "excel"
+  ],
+  "author": "sudhierk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sudhirkFujitsu/ExcelReadWriteDemo/issues"
+  },
+  "homepage": "https://github.com/sudhirkFujitsu/ExcelReadWriteDemo#readme",
+  "dependencies": {
+    "nodemailer": "^6.2.1",
+    "xlsx": "^0.14.3"
+  }
+}
