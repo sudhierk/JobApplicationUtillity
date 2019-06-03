@@ -1,19 +1,24 @@
 const nodemailer=require('nodemailer');
 
-exports.SendEmailNotification=function(){
+exports.SendEmailNotification=function(emailItem){
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-               user: 'sudhir.kadam.085@gmail.com',
-               pass: 'yourpassword'
+               user: 'your email goes here',
+               pass: 'your password goes here'
            }
        });
     
        const mailOptions = {
         from: 'sudhir.kadam.085@gmail.com', // sender address
-        to: 'sudhirsweet007@gmail.com', // list of receivers
-        subject: 'Test Email Subject', // Subject line
-        html: '<p>Your html here</p>'// plain text body
+        to: emailItem, // list of receivers
+        subject: '.Net Fullstack/MEAN Stack/Blockchain Consultant', // Subject line
+        attachments:
+                   {   // file on disk as an attachment
+                       filename: 'sudhirKadam.docx',
+                       path: '././SudhirNKadam Resume.docx' // stream this file
+                   },
+        html: { path: './mailBody.html' } // plain text body
       };
     
       transporter.sendMail(mailOptions, function (err, info) {
