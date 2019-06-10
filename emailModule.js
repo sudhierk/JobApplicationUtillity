@@ -1,13 +1,13 @@
 const nodemailer=require('nodemailer');
+const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    auth: {
+           user: 'sudhir.kadam.085@gmail.com',
+           pass: 'PA$$w0rd85'
+       }
+   });
 
 exports.SendEmailNotification=function(emailItem){
-    var transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-               user: 'your email goes here',
-               pass: 'your password goes here'
-           }
-       });
     
        const mailOptions = {
         from: 'sudhir.kadam.085@gmail.com', // sender address
