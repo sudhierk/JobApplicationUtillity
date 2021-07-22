@@ -22,6 +22,6 @@
   "homepage": "https://github.com/sudhirkFujitsu/ExcelReadWriteDemo#readme",
   "dependencies": {
     "nodemailer": "^6.2.1",
-    "xlsx": "^0.14.3"
+    "xlsx": "^0.17.0"
   }
 }
